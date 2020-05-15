@@ -6,7 +6,9 @@ export default () => (
   <div>
     <h2 className="taCenter">
       Follow us{' '}
-      <a href="https://instagram.com/thrivegoldcoast/">@thrivegoldcoast</a>
+      <a href="https://instagram.com/northern_eudaimonia/">
+        @northern_eudaimonia
+      </a>
     </h2>
     <br />
     <InstagramFeed count="8" />
@@ -14,7 +16,7 @@ export default () => (
       <div className="container taCenter">
         <span>
           © Copyright {new Date().getFullYear()} All rights reserved. Crafted by{' '}
-          <a href="https://thriveweb.com.au/">Thrive</a>.
+          <a href="https://stuart-p.github.io/">Stuart Palmer</a>.
         </span>
       </div>
     </footer>

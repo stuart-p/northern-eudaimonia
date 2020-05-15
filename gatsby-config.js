@@ -71,6 +71,13 @@ module.exports = {
         name: 'pages'
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/fonts`,
+        name: 'fonts'
+      }
+    },
 
     // images
     'gatsby-plugin-sharp',
@@ -115,6 +122,10 @@ module.exports = {
           })
         ]
       }
+    },
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: { fonts: [`Lato\:400, 400i, 700`], display: 'swap' }
     },
     {
       resolve: 'gatsby-plugin-nprogress',

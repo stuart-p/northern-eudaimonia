@@ -1,9 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import StackGrid from 'react-stack-grid'
 
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import GridImage from '../components/GridImage'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
@@ -18,6 +20,21 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
     <section className="section">
       <div className="container">
         <Content source={body} />
+        <StackGrid
+          columnWidth={350}
+          monitorImagesLoaded={true}
+          gutterHeight={2}
+          gutterWidth={7}
+        >
+          <GridImage imagePath={'/images/welcome.jpg'} />
+          <GridImage imagePath={'/images/parrot.jpg'} />
+          <GridImage imagePath={'/images/coffeeCupOutside.heic'} />
+          <GridImage imagePath={'/images/hotChoc.jpg'} />
+          <GridImage imagePath={'/images/oreoCrepeOutside.jpg'} />
+          <GridImage imagePath={'/images/doggy.png'} />
+          <GridImage imagePath={'/images/strawberryWaffle.jpg'} />
+          <GridImage imagePath={'/images/cheers.heic'} />
+        </StackGrid>
       </div>
     </section>
   </main>

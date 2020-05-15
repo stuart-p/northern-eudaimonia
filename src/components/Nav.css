@@ -1,9 +1,9 @@
 .Nav {
-  background: white;
+  background: var(--canaryYellow);
   position: sticky;
   top: 0;
-  z-index: 2;
-  border-bottom: 1px solid var(--lightGrey);
+  z-index: 10;
+  border-bottom: 1px solid var(--canaryYellow);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
 }
 
